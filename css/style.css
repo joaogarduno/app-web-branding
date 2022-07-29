@@ -156,7 +156,7 @@ main{
     min-width: 235px;
     max-width: 500px;
     height: 360px;
-    margin: 0 auto;
+    margin: 20px auto;
     font-family: "Inter", sans-serif;
 }
 .main-currency-table .currency-table-title{
@@ -165,6 +165,9 @@ main{
     font-weight: bold;
     line-height: 2.3rem;
     color: var(--bitcoin-orange);
+}
+.main-currency-table .commission-table-title{
+    color: var(--secondary-blue);
 }
 .currency-table-container{
     width: 90%;
@@ -203,13 +206,45 @@ main{
     line-height: 1.7rem;
     color: #757575;
 }
-.currency-table-container .down{
+/* IMAGE SVG */
+.currency-table-container span{
     display: inline-block;
     width: 15px;
     height: 15px;
     margin-left: 10px;
-    background-image: url('../assets/icons/trending-down.svg');
+    /* background: center cover no-repeat; */
+    /* background-position: center;
+    background-size: cover;    
+    background-repeat: no-repeat; */
+
+}
+.currency-table-container .down{
+    background: url('../assets/icons/trending-down.svg') center no-repeat;
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+}
+.currency-table-container .up{
+    background: url('../assets/icons/trending-up.svg') center no-repeat;
+    background-size: cover;
+}
+
+/* Update Data */
+.currecy-table--date{
+    width: max-content;
+    /* width: 190px; */
+    height: 30px;
+    margin: 15px auto 0;
+    /* margin: 0 auto;
+    margin-top: 15px; */
+    padding: 8px;
+    background-color: var(--soft-orange);
+    border-radius: 8px;
+}
+.commission-table--date{
+    background-color: var(--secondary-blue);
+}
+.currecy-table--date p{
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    color: var(--warm-black);
 }
